@@ -9,6 +9,7 @@ import java.util.logging.Logger;
 
 public final class Core extends JavaPlugin {
 
+    // Static Statements for our config.
     public static String playerNameMessage;
     public static String playerLastJoinMessage;
     public static String playerPositionMessage;
@@ -18,8 +19,11 @@ public final class Core extends JavaPlugin {
     public static String playerPositionMessageWorld;
     public static String playerUUIDMessage;
 
+    // Statements for configuration
     public static YamlConfiguration cfPlayerInfo = new YamlConfiguration();
     public static File configPlayerInfo;
+
+    // Bukkit default logger
     Logger logger = Bukkit.getLogger();
 
 

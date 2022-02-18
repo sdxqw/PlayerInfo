@@ -23,12 +23,26 @@ public class EventManager implements Listener {
 
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event) throws IOException {
+
+        // get player uuid
         UUID playerUUID = event.getPlayer().getUniqueId();
+
+        // get our player
         Player player = event.getPlayer();
+
+        // create the data file when player join (uuid)
         configPlayerInfo = new File("plugins/PlayerInfo/PlayerInfoOf-" + playerUUID + ".yml");
+
+        // load the data file
         Core.cfPlayerInfo = YamlConfiguration.loadConfiguration(configPlayerInfo);
+
+        // get date
         Date date = new Date();
+
+        // set date format
         SimpleDateFormat type = new SimpleDateFormat("MM-dd-yyyy");
+
+        // if the player never entered our server start if statement that define our data
         if(!player.hasPlayedBefore()) {
             Core.cfPlayerInfo.set(playerUUID + ".Player.Name", player.getName());
             Core.cfPlayerInfo.set(playerUUID + ".Player.LastJoin", type.format(date));
@@ -38,6 +52,8 @@ public class EventManager implements Listener {
             Core.cfPlayerInfo.set(playerUUID + ".Player.Position.World", player.getWorld().getName());
             Core.cfPlayerInfo.save(configPlayerInfo);
             logger.info("[PlayerInfo] > Player file created for " + playerUUID + " and saved.");
+
+            // if the player is join 1 time update our data
         } else {
             Core.cfPlayerInfo.set(playerUUID + ".Player.Name", player.getName());
             Core.cfPlayerInfo.set(playerUUID + ".Player.LastJoin", type.format(date));
@@ -52,12 +68,26 @@ public class EventManager implements Listener {
 
     @EventHandler
     public void onPlayerQuit(PlayerQuitEvent event) throws IOException {
+
+        // get player uuid
         UUID playerUUID = event.getPlayer().getUniqueId();
+
+        // get our player
         Player player = event.getPlayer();
+
+        // update the data file when player quit (uuid)
         configPlayerInfo = new File("plugins/PlayerInfo/PlayerInfoOf-" + playerUUID + ".yml");
+
+        // load the data file
         Core.cfPlayerInfo = YamlConfiguration.loadConfiguration(configPlayerInfo);
+
+        // get date
         Date date = new Date();
+
+        // set date format
         SimpleDateFormat type = new SimpleDateFormat("MM-dd-yyyy");
+
+        // update things
         Core.cfPlayerInfo.set(playerUUID + ".Player.Name", player.getName());
         Core.cfPlayerInfo.set(playerUUID + ".Player.LastJoin", type.format(date));
         Core.cfPlayerInfo.set(playerUUID + ".Player.Position.x", player.getLocation().getBlockX());
