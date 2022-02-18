@@ -19,7 +19,7 @@
 
 <h3 align="center">
     <a href="#key-features">Key Features</a> •
-    <a href="#installation">Installation</a> •
+    <a href="#Commands">Commands</a> •
     <a href="#contributing">Contributing</a>
 </h3>
   
@@ -29,6 +29,21 @@
 * Get Player Name, Last Join, Position, World and UUID
 * Configurable Config
 * Config Updater (When Join and Leave)
+
+## Commands
+
+* /pi [playerName]
+* /pinfo [playerName]
+* /playeri [playerName]
+
+## Contributing
+
+Want to help improve PlayerInfo? You contribute to the project.
+
+* Give to me 20B!
+* Improve the code!
+* Test the plugin and find bugs on it!
+* Dont skid the project!
 
 ---
 <h6 align="center">
