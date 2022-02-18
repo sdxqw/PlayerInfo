@@ -1,0 +1,9 @@
+messages:
+  playerNameMessage: "Player:"
+  playerLastJoinMessage: "Last Join:"
+  playerPositionMessage: "Position:"
+  playerPositionMessageX: "X:"
+  playerPositionMessageY: "/ Y:"
+  playerPositionMessageZ: "/ Z:"
+  playerPositionMessageWorld: "| World:"
+  playerUUIDMessage: "UUID:"

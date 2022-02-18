@@ -1,0 +1,14 @@
+name: PlayerInfo
+version: '0.1'
+main: org.xnotro.playerinfo.Core
+api-version: 1.18
+authors: [ xnotro ]
+description: Get All Player Infos And Its Save In PlayerUUID.yml
+commands:
+  pinfo:
+    description: get player info
+    usage: /pinfo [playerName]
+    aliases: [pi, playeri]
+permissions:
+  pinfo.command:
+    description: this node need for use /pinfo
