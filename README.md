@@ -20,7 +20,8 @@
 <h3 align="center">
     <a href="#key-features">Key Features</a> •
     <a href="#Commands">Commands</a> •
-    <a href="#contributing">Contributing</a>
+    <a href="#contributing">Contributing</a> •
+    <a href="#todo">TODO</a>
 </h3>
   
 
@@ -44,6 +45,11 @@ Want to help improve PlayerInfo? You contribute to the project by doing:
 * Improve the code!
 * Test the plugin and find bugs on it!
 * Dont skid the project!
+
+## TODO
+
+* Add PAPI API's
+* Mabey PlayerInfo API
 
 ---
 <h6 align="center">
