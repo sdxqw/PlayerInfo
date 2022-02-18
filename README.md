@@ -16,3 +16,23 @@
     <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/xNotro/PlayerInfo/total?style=plastic">
   </a>
 </p>
+
+<h3 align="center">
+    <a href="#key-features">Key Features</a> •
+    <a href="#installation">Installation</a> •
+    <a href="#contributing">Contributing</a>
+</h3>
+  
+
+## Key Features
+
+* Get Player Name, Last Join, Position, World and UUID
+* Configurable Config
+* Supported Locales (en)
+* Config Updater (When Join and Leave)
+
+---
+<h6 align="center">
+  | GitHub - <a href="https://github.com/xNotro">@omgitzfrost</a>  · 
+  |
+</h6>
