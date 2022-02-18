@@ -25,14 +25,21 @@ public final class Core extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        logger.info("[PlayerInfo] > Plugin Enabled.");
-        getCommand("pinfo").setExecutor(new CommandHandler());
-        logger.info("[PlayerInfo] > Command Loaded.");
-        getServer().getPluginManager().registerEvents(new EventManager(), this);
-        logger.info("[PlayerInfo] > Event Loaded.");
-        saveDefaultConfig();
-        configInitializer();
-        logger.info("[PlayerInfo] > Config Loaded.");
+        if (Bukkit.getPluginManager().getPlugin("PlaceholderAPI") == null) {
+            logger.info("[PlayerInfo] > Plugin Enabled.");
+            getCommand("pinfo").setExecutor(new CommandHandler());
+            logger.info("[PlayerInfo] > Command Loaded.");
+            getServer().getPluginManager().registerEvents(new EventManager(), this);
+            logger.info("[PlayerInfo] > Event Loaded.");
+            saveDefaultConfig();
+            configInitializer();
+            logger.info("[PlayerInfo] > Config Loaded.");
+            Bukkit.getPluginManager().registerEvents(new EventManager(), this);
+        } else {
+            logger.warning("Could not find PlaceholderAPI! This plugin is required.");
+            Bukkit.getPluginManager().disablePlugin(this);
+        }
+
     }
 
     public void configInitializer() {

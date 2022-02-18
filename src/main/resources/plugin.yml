@@ -4,6 +4,7 @@ main: org.xnotro.playerinfo.Core
 api-version: 1.18
 authors: [ xnotro ]
 description: Get All Player Infos And Its Save In PlayerUUID.yml
+depend: [PlaceholderAPI]
 commands:
   pinfo:
     description: get player info
