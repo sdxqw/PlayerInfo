@@ -38,7 +38,7 @@
 
 ## Contributing
 
-Want to help improve PlayerInfo? You contribute to the project.
+Want to help improve PlayerInfo? You contribute to the project by doing:
 
 * Give to me 20B!
 * Improve the code!
