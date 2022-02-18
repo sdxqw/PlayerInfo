@@ -28,7 +28,6 @@
 
 * Get Player Name, Last Join, Position, World and UUID
 * Configurable Config
-* Supported Locales (en)
 * Config Updater (When Join and Leave)
 
 ---
