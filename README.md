@@ -33,6 +33,6 @@
 
 ---
 <h6 align="center">
-  | GitHub - <a href="https://github.com/xNotro">@omgitzfrost</a>  · 
+  | GitHub - <a href="https://github.com/xNotro">@xNotro</a>  · 
   |
 </h6>
