@@ -6,16 +6,13 @@
 <h4 align="center">get player infos with 1 simple command.</h4>
 
 <p align="center">
-  <a href="https://github.com/OMGitzFROST/PlayerLogs/blob/master/LICENSE.txt">
-    <img alt="GitHub" src="https://img.shields.io/github/license/OMGitzFROST/PlayerLogs?style=plastic">
+  <a href="https://github.com/xNotro/PlayerInfo/blob/master/LICENSE.txt">
+    <img alt="GitHub" src="https://img.shields.io/github/license/xNotro/PlayerInfo?style=plastic">
   </a>
-  <a href="https://github.com/OMGitzFROST/PlayerLogs/releases/latest">
-    <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/OMGitzFROST/PlayerLogs?style=plastic">
+  <a href="https://github.com/xNotro/PlayerInfo/releases/latest">
+    <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/xNotro/PlayerInfo?style=plastic">
   </a>
-  <a href="https://github.com/OMGitzFROST/PlayerLogs/releases/latest">
-    <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/OMGitzFROST/PlayerLogs/total?style=plastic">
-  </a>
-  <a href="https://github.com/sponsors/OMGitzFROST">
-    <img src="https://img.shields.io/badge/$-donate-brown.svg?style=plastic" alt="Donate Pill">
+  <a href="https://github.com/xNotro/PlayerInfo/releases/latest">
+    <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/xNotro/PlayerInfo/total?style=plastic">
   </a>
 </p>
