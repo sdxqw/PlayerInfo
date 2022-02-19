@@ -66,6 +66,7 @@ public class EventManager implements Listener {
             logger.info("[PlayerInfo] > Updated player file for " + playerUUID);
         }
 
+        // PAPI THINGS
         Core.playerNameMessage = PlaceholderAPI.setPlaceholders(player, Core.playerNameMessage);
         Core.playerLastJoinMessage = PlaceholderAPI.setPlaceholders(player, Core.playerNameMessage);
         Core.playerPositionMessageX = PlaceholderAPI.setPlaceholders(player, Core.playerNameMessage);
