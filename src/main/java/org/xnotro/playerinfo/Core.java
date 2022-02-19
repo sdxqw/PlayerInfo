@@ -19,6 +19,7 @@ public final class Core extends JavaPlugin {
     public static String playerPositionMessageWorld;
     public static String playerUUIDMessage;
 
+    // PAPI THINGS
     public static String playerNameMessagePAPI;
     public static String playerLastJoinMessagePAPI;
     public static String playerPositionMessageXPAPI;
