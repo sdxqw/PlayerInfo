@@ -61,6 +61,11 @@ public class CommandHandler implements CommandExecutor {
                                 Core.playerPositionMessageWorld+ " " + player.getWorld().getName()
                         );
                         player.sendMessage(Core.playerUUIDMessage+ " " + playerTarget.getUniqueId());
+                        player.sendMessage("[PlayerInfo] > Here The Info's about " + player.getName() + " PAPI:");
+                        player.sendMessage(Core.playerNameMessage);
+                        player.sendMessage(Core.playerLastJoinMessage);
+                        player.sendMessage(Core.playerPositionMessage+ " " + Core.playerPositionMessageX+ " "+ Core.playerPositionMessageY+ " " +Core.playerPositionMessageZ+ " " +Core.playerPositionMessageWorld);
+                        player.sendMessage(Core.playerUUIDMessage);
                     }
                 }
             }

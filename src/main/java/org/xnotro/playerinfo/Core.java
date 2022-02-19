@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 
 public final class Core extends JavaPlugin {
 
-    // Static Statements for our config.
+    // Static Statements for messages
     public static String playerNameMessage;
     public static String playerLastJoinMessage;
     public static String playerPositionMessage;
@@ -29,24 +29,24 @@ public final class Core extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        if (Bukkit.getPluginManager().getPlugin("PlaceholderAPI") == null) {
+        if (Bukkit.getPluginManager().getPlugin("PlaceholderAPI") != null) {
             logger.info("[PlayerInfo] > Plugin Enabled.");
             getCommand("pinfo").setExecutor(new CommandHandler());
             logger.info("[PlayerInfo] > Command Loaded.");
-            getServer().getPluginManager().registerEvents(new EventManager(), this);
-            logger.info("[PlayerInfo] > Event Loaded.");
             saveDefaultConfig();
             configInitializer();
             logger.info("[PlayerInfo] > Config Loaded.");
             Bukkit.getPluginManager().registerEvents(new EventManager(), this);
+            logger.info("[PlayerInfo] > Event Loaded.");
         } else {
-            logger.warning("Could not find PlaceholderAPI! This plugin is required.");
+            logger.warning("[PlayerInfo] > Could not find PlaceholderAPI! This plugin is required.");
             Bukkit.getPluginManager().disablePlugin(this);
         }
 
     }
 
     public void configInitializer() {
+        // Config Messages
         playerNameMessage = getConfig().getString("messages.playerNameMessage");
         playerLastJoinMessage = getConfig().getString("messages.playerLastJoinMessage");
         playerPositionMessage = getConfig().getString("messages.playerPositionMessage");

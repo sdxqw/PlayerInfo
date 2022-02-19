@@ -1,5 +1,6 @@
 package org.xnotro.playerinfo;
 
+import me.clip.placeholderapi.PlaceholderAPI;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
@@ -22,7 +23,7 @@ public class EventManager implements Listener {
     Logger logger = Bukkit.getLogger();
 
     @EventHandler
-    public void onPlayerJoin(PlayerJoinEvent event) throws IOException {
+    public void onPlayerJoin(PlayerJoinEvent event, String[] args) throws IOException {
 
         // get player uuid
         UUID playerUUID = event.getPlayer().getUniqueId();
@@ -64,6 +65,14 @@ public class EventManager implements Listener {
             Core.cfPlayerInfo.save(configPlayerInfo);
             logger.info("[PlayerInfo] > Updated player file for " + playerUUID);
         }
+
+        Core.playerNameMessage = PlaceholderAPI.setPlaceholders(player, Core.playerNameMessage);
+        Core.playerLastJoinMessage = PlaceholderAPI.setPlaceholders(player, Core.playerNameMessage);
+        Core.playerPositionMessageX = PlaceholderAPI.setPlaceholders(player, Core.playerNameMessage);
+        Core.playerPositionMessageY = PlaceholderAPI.setPlaceholders(player, Core.playerNameMessage);
+        Core.playerPositionMessageZ = PlaceholderAPI.setPlaceholders(player, Core.playerNameMessage);
+        Core.playerPositionMessageWorld = PlaceholderAPI.setPlaceholders(player, Core.playerNameMessage);
+        Core.playerUUIDMessage = PlaceholderAPI.setPlaceholders(player, Core.playerNameMessage);
     }
 
     @EventHandler
