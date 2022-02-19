@@ -48,7 +48,7 @@ Want to help improve PlayerInfo? You contribute to the project by doing:
 
 ## TODO
 
-* Add PAPI API's
+* Add PAPI API's (DONE)
 * Mabey PlayerInfo API
 
 ---
