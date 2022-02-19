@@ -19,6 +19,14 @@ public final class Core extends JavaPlugin {
     public static String playerPositionMessageWorld;
     public static String playerUUIDMessage;
 
+    public static String playerNameMessagePAPI;
+    public static String playerLastJoinMessagePAPI;
+    public static String playerPositionMessageXPAPI;
+    public static String playerPositionMessageYPAPI;
+    public static String playerPositionMessageZPAPI;
+    public static String playerPositionMessageWorldPAPI;
+    public static String playerUUIDMessagePAPI;
+
     // Statements for configuration
     public static YamlConfiguration cfPlayerInfo = new YamlConfiguration();
     public static File configPlayerInfo;
@@ -55,5 +63,6 @@ public final class Core extends JavaPlugin {
         playerPositionMessageZ = getConfig().getString("messages.playerPositionMessageZ");
         playerPositionMessageWorld = getConfig().getString("messages.playerPositionMessageWorld");
         playerUUIDMessage = getConfig().getString("messages.playerUUIDMessage");
+
     }
 }

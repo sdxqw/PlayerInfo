@@ -67,13 +67,13 @@ public class EventManager implements Listener {
         }
 
         // PAPI THINGS
-        Core.playerNameMessage = PlaceholderAPI.setPlaceholders(player, Core.playerNameMessage);
-        Core.playerLastJoinMessage = PlaceholderAPI.setPlaceholders(player, Core.playerNameMessage);
-        Core.playerPositionMessageX = PlaceholderAPI.setPlaceholders(player, Core.playerNameMessage);
-        Core.playerPositionMessageY = PlaceholderAPI.setPlaceholders(player, Core.playerNameMessage);
-        Core.playerPositionMessageZ = PlaceholderAPI.setPlaceholders(player, Core.playerNameMessage);
-        Core.playerPositionMessageWorld = PlaceholderAPI.setPlaceholders(player, Core.playerNameMessage);
-        Core.playerUUIDMessage = PlaceholderAPI.setPlaceholders(player, Core.playerNameMessage);
+        Core.playerNameMessagePAPI = PlaceholderAPI.setPlaceholders(player, Core.playerNameMessage);
+        Core.playerLastJoinMessagePAPI = PlaceholderAPI.setPlaceholders(player, Core.playerLastJoinMessage);
+        Core.playerPositionMessageXPAPI = PlaceholderAPI.setPlaceholders(player, Core.playerPositionMessageX);
+        Core.playerPositionMessageYPAPI = PlaceholderAPI.setPlaceholders(player, Core.playerPositionMessageY);
+        Core.playerPositionMessageZPAPI = PlaceholderAPI.setPlaceholders(player, Core.playerPositionMessageZ);
+        Core.playerPositionMessageWorldPAPI = PlaceholderAPI.setPlaceholders(player, Core.playerPositionMessageWorld);
+        Core.playerUUIDMessagePAPI = PlaceholderAPI.setPlaceholders(player, Core.playerUUIDMessage);
     }
 
     @EventHandler

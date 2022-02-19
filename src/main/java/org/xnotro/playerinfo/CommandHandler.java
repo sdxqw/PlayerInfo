@@ -51,7 +51,7 @@ public class CommandHandler implements CommandExecutor {
 
                     // if the player exist start sending info's about our player
                     } else {
-                        player.sendMessage("[PlayerInfo] > Here The Info's about " + player.getName() + " PAPI:");
+                        player.sendMessage("[PlayerInfo] > Here The Info's about " + player.getName());
                         player.sendMessage(Core.playerNameMessage);
                         player.sendMessage(Core.playerLastJoinMessage);
                         player.sendMessage(Core.playerPositionMessage+ " " + Core.playerPositionMessageX+ " "+ Core.playerPositionMessageY+ " " +Core.playerPositionMessageZ+ " " +Core.playerPositionMessageWorld);
